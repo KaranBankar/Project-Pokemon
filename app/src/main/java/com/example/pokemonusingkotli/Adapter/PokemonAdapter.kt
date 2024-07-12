@@ -11,9 +11,6 @@ import java.util.zip.Inflater
 
 class PokemonAdapter(private val items:List<Result>): RecyclerView.Adapter<PokemonAdapter.Poke>(){
 
-
-
-
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): Poke {
         val inflater=LayoutInflater.from(parent.context)
         val binding=ItemLayoutBinding.inflate(inflater,parent,false)
