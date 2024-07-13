@@ -2,8 +2,8 @@
     <!-- Base application theme. -->
     <style name="Base.Theme.PokemonUsingKotli" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
     </style>
 
-    <style name="Theme.PokemonUsingKotli" parent="Base.Theme.PokemonUsingKotli" />
+    <style name="Theme.PokemonUsingKotli" parent="Base.Theme.PokemonUsingKotli" >
+    </style>
 </resources>

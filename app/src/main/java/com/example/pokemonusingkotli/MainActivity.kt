@@ -43,12 +43,12 @@ class MainActivity : AppCompatActivity() {
                 if(response.isSuccessful){
                     adapter=PokemonAdapter(response.body()!!.results as ArrayList<Result>)
                     binding.recycler.adapter=adapter
-                    Toast.makeText(baseContext,"Success",Toast.LENGTH_LONG).show()
+                    Toast.makeText(baseContext,"Data Load Successfully",Toast.LENGTH_LONG).show()
                 }
             }
 
             override fun onFailure(call: Call<data?>, t: Throwable) {
-                Toast.makeText(baseContext, "Failed: ${t.message}", Toast.LENGTH_LONG).show()
+                Toast.makeText(baseContext, "Data Load Failed: ${t.message}", Toast.LENGTH_LONG).show()
             }
         })
     }
