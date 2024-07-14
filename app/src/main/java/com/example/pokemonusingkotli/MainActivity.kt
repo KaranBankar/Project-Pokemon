@@ -22,9 +22,11 @@ class MainActivity : AppCompatActivity() {
     lateinit var binding: ActivityMainBinding
     lateinit var adapter: PokemonAdapter
 
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
+
         binding=ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
@@ -43,7 +45,10 @@ class MainActivity : AppCompatActivity() {
                 if(response.isSuccessful){
                     adapter=PokemonAdapter(response.body()!!.results as ArrayList<Result>)
                     binding.recycler.adapter=adapter
+
                     Toast.makeText(baseContext,"Data Load Successfully",Toast.LENGTH_LONG).show()
+                    Toast.makeText(baseContext,"Data Load Successfully chaitany",Toast.LENGTH_LONG).show()
+
                 }
             }
 
