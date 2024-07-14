@@ -49,7 +49,6 @@ class MainActivity : AppCompatActivity() {
                     Toast.makeText(baseContext,"Data Load Successfully",Toast.LENGTH_LONG).show()
                     Toast.makeText(baseContext,"Data Load Successfully chaitany",Toast.LENGTH_LONG).show()
                     Toast.makeText(baseContext,"Data Loaded",Toast.LENGTH_SHORT).show()
-
                 }
             }
 
